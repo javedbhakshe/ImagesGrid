@@ -17,7 +17,12 @@ const SearchBar = ({ onSearch }) => {
           value={term}
           onChange={({ target }) => setTerm(target.value)}
         />
-        <Button variant="outline-secondary" title="Search Images" type="submit">
+        <Button
+          variant="outline-secondary"
+          title="Search Images"
+          type="submit"
+          disabled={!term}
+        >
           <i className="bi bi-search"></i>
         </Button>
       </InputGroup>
