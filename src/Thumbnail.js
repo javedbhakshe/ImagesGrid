@@ -14,7 +14,7 @@ const Thumbnail = ({ data }) => {
     >
       <Link to={`${data.id}`}>
         <div className="thumbnail">
-          <img
+          <Image
             src={data.imageURL}
             alt={data.tags}
             style={{ width: "100%", height: "100%" }}
