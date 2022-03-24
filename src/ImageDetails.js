@@ -18,6 +18,8 @@ const ImageDetails = () => {
   const navigate = useNavigate();
   const [currentImage, setCurrentImage] = useState(null);
   const [isLoading, setisLoading] = useState(true);
+
+  /* Fetching data for individual image on selection */
   useEffect(() => {
     let { imageid } = parmas;
     API.get("/", {
@@ -37,6 +39,7 @@ const ImageDetails = () => {
         setisLoading(false);
       });
   }, []);
+
   return (
     <Modal show={true} fullscreen={true} onHide={(e) => navigate("/")}>
       <Modal.Header closeButton></Modal.Header>

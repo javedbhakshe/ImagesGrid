@@ -5,6 +5,7 @@ import App from "./App";
 import ImageDetails from "./ImageDetails";
 import reportWebVitals from "./reportWebVitals";
 
+/* Setting up routes used in the app */
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>

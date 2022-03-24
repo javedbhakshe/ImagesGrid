@@ -12,6 +12,8 @@ const App = () => {
   const [serachTerm, setserachTerm] = useState("");
   const [imageList, setimageList] = useState([]);
   const [isLoading, setisLoading] = useState(true);
+
+  /* Load Images on initial load and subsequent change of search term and page change*/
   useEffect(() => {
     setisLoading(true);
     API.get("/", {
